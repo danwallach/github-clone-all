@@ -24,19 +24,19 @@ defaultPrefix = ""
 
 parser = argparse.ArgumentParser(description='Clone a large number of GitHub repos all at once.')
 parser.add_argument('--token',
-                        nargs='?',
+                        nargs=1,
                         default=defaultGithubToken,
                         help='GitHub API token')
 parser.add_argument('--project',
-                        nargs='?',
+                        nargs=1,
                         default=defaultGithubProject,
                         help='GitHub project to scan, default: ' + defaultGithubProject)
 parser.add_argument('--prefix',
-                        nargs='?',
+                        nargs=1,
                         default=defaultPrefix,
                         help='Prefix on projects to match (default: match all projects)')
 parser.add_argument('--out',
-                        nargs='?',
+                        nargs=1,
                         default=".",
                         help='Destination directory for GitHub clones (default: current directory)')
 
