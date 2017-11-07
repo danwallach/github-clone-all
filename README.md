@@ -11,7 +11,7 @@ then this script is for you.
 1) If you haven't already done this, you'll first need to `pip install
 requests` for a necessary library.
 
-2) First, get a GitHub token with all the "Repo" privileges. You do
+2) Get a GitHub token with all the "Repo" privileges. You do
 this on the GitHub website
 [(instructions)](https://github.com/blog/1509-personal-api-tokens). 
 
