@@ -47,22 +47,6 @@ githubProject = args.project[0]
 githubToken = args.token[0]
 outDir = args.out[0]
 
-print "prefix: " + githubPrefix
-print "project: " + githubProject
-print "token: " + githubToken
-print "outdir: " + outDir
-
-#
-# local goodies (for my cron job)
-#
-from datetime import datetime
-from pytz import timezone  
-print ""
-print ">>>>>>>>>>>>>>"
-print ">>>>>>>>>>>>>> Running github-clone-all: " + datetime.now(timezone("US/Central")).strftime('%Y-%m-%d %H:%M:%S %Z%z')
-print ">>>>>>>>>>>>>>"
-print ""
-
 requestHeaders = {
     "User-Agent": "GitHubCloneAll/1.0",
     "Authorization": "token " + githubToken,
